@@ -56,8 +56,8 @@ class SiteController extends Controller
         $model=new Idea();
         if ($model->load(Yii::$app->request->post())) {
             if($model->save()) {
-
-            }
+                return $this->redirect('/site/index');
+            }else{  return $this->redirect('/site/index');}
         }else{
             return $this->render('addidea', [
                 'model' => $model,

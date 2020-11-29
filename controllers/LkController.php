@@ -11,7 +11,7 @@ use app\models\File;
 use app\models\UploadForm;
 use yii\web\UploadedFile;
 
-class IdeasController extends Controller
+class LkController extends Controller
 {
     public $pending = 0;
     public $processed = 0;
@@ -22,7 +22,7 @@ class IdeasController extends Controller
 
     public function beforeAction($action)
     {
-        $this->layout = '@app/views/layouts/main'; //your layout name
+        $this->layout = '@app/views/layouts/mainlk'; //your layout name
         return parent::beforeAction($action);
     }
     public function actions()
@@ -39,17 +39,17 @@ class IdeasController extends Controller
      *
      * @return string
      */
-    public function actionIndex($id)
+    public function actionIndex()
     {
-        $query = Idea::find()->where(['id' => $id ]);
+        $query = Idea::find();
         $data = new ActiveDataProvider([
             'query' => $query,
             'pagination' => [
-                'pageSize' => 1,
+                'pageSize' => 5,
             ]
         ]);
         return $this->render('index',[
-            'data' => $data,'id'=>$id
+            'data' => $data
         ]);
 
     }

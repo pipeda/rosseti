@@ -16,6 +16,10 @@ class Idea extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+    public $asost="Иванов Иван Иванович";
+    public $doljn="Электрик";
+    public $obr="Среднее профессиональное";
+    public $orig="100%";
     public static function tableName()
     {
         return 'idea';
@@ -41,7 +45,8 @@ class Idea extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Название',
-            'opis' => 'Описание',
+            'opis' => 'Краткое описание',
+            'orig' =>'Оригинальность'
         ];
     }
 }

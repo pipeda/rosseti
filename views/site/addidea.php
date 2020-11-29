@@ -12,6 +12,9 @@ $form = ActiveForm::begin([
     'id' => 'Idea-form',
     'options' => ['class' => 'form-horizontal'],
 ]) ?>
+<?= $form->field($model, 'asost')->label('Авторский состав') ?>
+<?= $form->field($model, 'doljn')->label('Должность') ?>
+<?= $form->field($model, 'obr')->label('Образование') ?>
 <?= $form->field($model, 'name') ?>
 <?= $form->field($model, 'opis')->textarea() ?>
 

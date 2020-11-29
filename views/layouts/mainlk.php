@@ -38,13 +38,8 @@ AppAsset::register($this);
                 <nav>
                     <ul>
                         <li>
-                            <a href="/" title="">
+                            <a href="/lk/" title="">
                                 Главная
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/site/addidea" title="">
-                                Добавить рационализаторское предложения
                             </a>
                         </li>
                     </ul>
@@ -68,9 +63,9 @@ AppAsset::register($this);
                                             </div>
                                         </div>
                                         <div class="user-specs">
-                                            <h2>Иванов Иван Иванович</h2>
-                                            <h3>89142007297</h3>
-                                            <h3>Электрик</h3>
+                                            <h2>Семенов Семен Семеныч</h2>
+                                            <h3>89141940880</h3>
+                                            <h3>Начальник</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -85,34 +80,6 @@ AppAsset::register($this);
                                         <div class="job_descp">
                                             <?= $content ?>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="top-profiles">
-                                <div class="pf-hd">
-                                    <h3>Доска почёта</h3>
-                                    <i class="la la-ellipsis-v"></i>
-                                </div>
-                                <div class="post_topbar" >
-                                    <div class="user-profy slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 158px;">
-                                        <img src="http://via.placeholder.com/57x57" alt="">
-                                        <h3>Васин Василий</h3>
-                                        <span>Монтажник</span>
-                                        <a href="#" title="" tabindex="-1">Страничка рационализатора</a>
-                                    </div>
-
-                                    <div class="user-profy slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 158px;">
-                                        <img src="http://via.placeholder.com/57x57" alt="">
-                                        <h3>Васин Василий</h3>
-                                        <span>Монтажник</span>
-                                        <a href="#" title="" tabindex="-1">Страничка рационализатора</a>
-                                    </div>
-
-                                    <div class="user-profy slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 158px;">
-                                        <img src="http://via.placeholder.com/57x57" alt="">
-                                        <h3>Васин Василий</h3>
-                                        <span>Монтажник</span>
-                                        <a href="#" title="" tabindex="-1">Страничка рационализатора</a>
                                     </div>
                                 </div>
                             </div>
